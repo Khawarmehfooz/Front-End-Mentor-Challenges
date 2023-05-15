@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./scripts/style.css" />
+    <!-- Scripts -->
+    <script defer src="./scripts/script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="form-container">
+          <div class="form-group">
+            <label for="day">Day</label>
+            <input
+              type="number"
+              name=""
+              id="day"
+              required
+              placeholder="DD"
+              min="1"
+              max="31"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="day">Month</label>
+            <input
+              type="number"
+              name=""
+              id="month"
+              required
+              placeholder="MM"
+              min="1"
+              max="12"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="day">Year</label>
+            <input
+              type="number"
+              name=""
+              id="year"
+              required
+              placeholder="YYYY"
+              min="1900"
+              max="2023"
+            />
+            <span class="error"></span>
+          </div>
+        </div>
+      </form>
+      <div class="btn-div">
+        <button id="calc-btn">
+          <img id="arrow-img" src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="date-container">
+        <div class="date-group">
+          <span id="output-year" class="blank-field">--</span>
+          <p class="date">years</p>
+        </div>
+        <div class="date-group">
+          <span id="output-month" class="blank-field">--</span>
+          <p class="date">month</p>
+        </div>
+        <div class="date-group">
+          <span id="output-day" class="blank-field">--</span>
+          <p class="date">days</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/KhawarMehfooz">Khawar Mehfooz</a>.
+    </footer>
+  </body>
+</html>

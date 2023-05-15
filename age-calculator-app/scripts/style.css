@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--light-grey);
+}
+/* Main */
+main {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px 10px 100px 10px;
+  width: min(800px, 95%);
+}
+/* Form */
+.form-container {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-around; */
+  padding-bottom: 50px;
+  position: relative;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  text-transform: uppercase;
+  color: var(--smokey-grey);
+  font-weight: 600;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+/* Input Styles */
+input[type="number"] {
+  outline: transparent;
+  border: 1px solid var(--light-grey);
+  font-size: 32px;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+}
+input[type="number"]::placeholder {
+  font-weight: 700;
+  font-size: 30px;
+}
+/* Invalid Input */
+input[type="number"]:invalid label {
+  color: var(--light-red);
+}
+/* Error Styles */
+.error {
+  position: absolute;
+  font-size: 14px;
+  color: var(--light-red);
+  display: block;
+  /* margin-top: 10px; */
+}
+.btn-div {
+  position: relative;
+  display: flex;
+  border-top: 1px solid var(--light-grey);
+  justify-content: flex-end;
+  width: 100%;
+}
+/* Button */
+#calc-btn {
+  background-color: var(--purple);
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  padding: 20px;
+  position: absolute;
+  top: -43px;
+  cursor: pointer;
+}
+/* Date Group */
+.date-container {
+  padding-top: 30px;
+}
+
+.date-group {
+  display: flex;
+  align-items: center;
+}
+.blank-field {
+  color: var(--purple);
+  font-weight: 800;
+  font-size: 72px;
+  font-style: italic;
+}
+.date {
+  font-size: 72px;
+  color: var(--off-black);
+  font-weight: 800;
+  font-style: italic;
+}
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 766px) {
+  .blank-field {
+    font-size: 48px;
+  }
+  .date {
+    font-size: 48px;
+  }
+  #arrow-img {
+    height: 25px;
+    width: 25px;
+  }
+  #calc-btn {
+    padding: 10px;
+    top: -25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  .form-container {
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-div {
+    justify-content: center;
+  }
+  input[type="number"] {
+    width: 110px;
+    font-size: 28px;
+    padding: 10px;
+  }
+  input[type="number"]::placeholder {
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .error {
+    font-size: 12px;
+  }
+  /* #calc-btn {
+    top: 165px;
+    left: 300px;
+  } */
+}
