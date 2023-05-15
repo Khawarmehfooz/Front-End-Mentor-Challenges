@@ -41,6 +41,7 @@ const inputValidator = () => {
         } else {
             el.style.borderColor = "hsl(0, 0%, 86%)"
             parent.querySelector("span").textContent = ""
+            parent.querySelector("label").style.color = "hsl(0, 1%, 44%)"
             validator = true;
         }
     })
