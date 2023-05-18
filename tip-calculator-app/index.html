@@ -30,7 +30,10 @@
     <main>
       <div class="left">
         <div class="form-group">
-          <label for="bill">Bill </label>
+          <div class="label-group">
+            <label for="bill">Bill </label>
+            <span class="error-msg" id="bill-error">Can't be Zero</span>
+          </div>
           <div class="input-group">
             <span>$</span>
             <input
@@ -40,6 +43,8 @@
               dir="rtl"
               id="bill"
               placeholder="0"
+              min="10"
+              max="9999"
             />
           </div>
         </div>
@@ -66,7 +71,10 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="people">Number of Peoples </label>
+          <div class="label-group">
+            <label for="people">Number of Peoples </label>
+            <span id="error-msg" class="error-msg">Can't be Zero</span>
+          </div>
           <div class="input-group">
             <i class="fa-solid fa-user"></i>
             <input
@@ -76,6 +84,8 @@
               dir="rtl"
               id="people"
               placeholder="0"
+              min="1"
+              max="18"
             />
           </div>
         </div>
@@ -86,14 +96,17 @@
             <p class="mini-title">Tip Amount</p>
             <span class="mini-description">/ person</span>
           </div>
-          <div id="tip-amount" class="amount">%0.00</div>
+          <div id="tip-amount" class="amount">$0.00</div>
         </div>
         <div class="amount-div">
           <div class="amount-left">
             <p class="mini-title">Total</p>
             <span class="mini-description">/ person</span>
           </div>
-          <div id="total-amount" class="amount">%0.00</div>
+          <div id="total-amount" class="amount">$0.00</div>
+        </div>
+        <div class="btn-reset-container">
+          <button id="reset-btn">RESET</button>
         </div>
       </div>
     </main>
@@ -104,7 +117,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://khawar.io/">Khawar Mehfooz</a>.
     </div>
   </body>
 </html>

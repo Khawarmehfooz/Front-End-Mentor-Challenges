@@ -106,18 +106,33 @@ input::placeholder {
   background-color: var(--light-grayish-cyan);
   color: var(--very-dark-cyan);
 }
+.select-tip-btn:focus {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
 #custom-input {
   /* width: 150px; */
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
   text-align: center;
   border: 2px solid transparent;
+  cursor: text;
+  padding: 0;
 }
 #custom-input:focus {
   border-color: var(--strong-cyan);
 }
 #custom-input::placeholder {
   font-size: 20px;
+}
+.label-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.error-msg {
+  color: red;
+  display: none;
 }
 .right {
   width: 50%;
@@ -139,6 +154,35 @@ input::placeholder {
   color: var(--dark-grayish-cyan);
   font-weight: 700;
 }
+.btn-reset-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#reset-btn {
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  top: 120px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--dark-grayish-cyan);
+  outline: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--grayish-cyan);
+}
+#reset-btn:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+#reset-btn:focus {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
 .amount {
   font-size: 36px;
   font-weight: 700;
@@ -151,4 +195,36 @@ input::placeholder {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 766px) {
+  body {
+    height: auto;
+  }
+  main {
+    flex-direction: column;
+    margin: 10px 0;
+    /* display: none; */
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+
+  #reset-btn {
+    position: relative;
+    top: 0;
+  }
+  .error-msg {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .select-tip-btn {
+    width: 45%;
+  }
+  .error-msg {
+    font-size: 12px;
+  }
 }
