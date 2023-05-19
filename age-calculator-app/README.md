@@ -1,6 +1,6 @@
 # Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -37,14 +36,15 @@ Users should be able to:
 ![output](./screenshots/output.png)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Live Site URL: [Visit](https://age-calculator-app-by-khawar.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- HTML5 
-- CSS 
+- HTML5
+- CSS
 - Flexbox
 - JavaScript
 
@@ -53,4 +53,3 @@ Users should be able to:
 - Website - [Khawar Mehfooz](https://khawar.io)
 - Frontend Mentor - [@Khawarmehfooz](https://www.frontendmentor.io/profile/khawarmehfooz)
 - Twitter - [@KhawarMehfooz](https://www.twitter.com/KhawarMehfooz)
-
