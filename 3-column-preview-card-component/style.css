@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --heading-color: hsl(0, 0%, 95%);
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--heading-color);
+}
+main {
+  width: min(90%, 55rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  padding: 45px;
+}
+.orange {
+  background-color: var(--bright-orange);
+  border-radius: 5px 0 0 5px;
+}
+.dark-cyan {
+  background-color: var(--dark-cyan);
+}
+.very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 5px 5px 0;
+}
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--heading-color);
+}
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--paragraph-color);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+}
+.link {
+  /* display: block; */
+  background-color: var(--heading-color);
+  padding: 8px 30px;
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+.link:hover {
+  cursor: pointer;
+  border-color: var(--heading-color);
+  color: var(--heading-color);
+  background-color: transparent;
+}
+.orange-link {
+  color: var(--bright-orange);
+}
+.dark-cyan-link {
+  color: var(--dark-cyan);
+}
+.very-dark-cyan-link {
+  color: var(--very-dark-cyan);
+}
+
+/* Attribution */
+.attribution {
+  font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 766px) {
+  body {
+    height: auto;
+  }
+  main {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .orange {
+    background-color: var(--bright-orange);
+    border-radius: 5px 5px 0 0;
+  }
+  .very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 5px 5px;
+  }
+  .attribution {
+    position: relative;
+    margin-top: 20px;
+  }
+}
