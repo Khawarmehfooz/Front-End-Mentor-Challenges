@@ -114,6 +114,8 @@ input[type="number"]:invalid label {
 }
 /* Attribution */
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
