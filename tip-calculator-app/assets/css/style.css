@@ -51,7 +51,6 @@ label {
   display: flex;
   align-items: center;
   /* width: 50%; */
-
   background-color: var(--very-light-grayish-cyan);
 }
 .input-group span {
@@ -104,6 +103,10 @@ input::placeholder {
 .select-tip-btn:hover {
   cursor: pointer;
   background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+.select-tip-btn:active {
+  background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
 }
 .select-tip-btn:focus {

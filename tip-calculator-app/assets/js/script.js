@@ -98,4 +98,6 @@ resetBtn.addEventListener("click", () => {
     billError.style.display = "none"
     errorMessage.style.display = "none"
     peoples.parentElement.style.borderColor = "transparent"
+    resetBtn.style.backgroundColor = "hsl(186, 14%, 43%)"
+    resetBtn.style.color = "hsl(184, 14%, 56%)"
 })
