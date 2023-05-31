@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  box-sizing: border-box;
+}
+/* Body
+ */
+body {
+  background-color: var(--main-bg);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+/* main */
+main {
+  width: min(60rem, 95%);
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  display: flex;
+}
+/* Card-left */
+.card-left {
+  width: 50%;
+  padding: 30px 50px;
+}
+#title {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  font-weight: 700;
+}
+#accent {
+  color: var(--accent);
+}
+#description {
+  font-size: 15px;
+  color: var(--main-paragraph);
+  font-family: "Lexend Deca", sans-serif;
+}
+.stat-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-title {
+  font-family: "Inter", sans-serif;
+  color: var(--stat-heading);
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+.col-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  color: var(--main-paragraph);
+  text-transform: uppercase;
+}
+/* Card-right */
+.card-right {
+  width: 50%;
+  background-image: url(./images/image-header-desktop.jpg);
+  background-color: rgba(157, 89, 201, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 0 5px 5px 0;
+}
+/* Attribution */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+.attribution a {
+  color: var(--accent);
+}
+@media only screen and (max-width: 766px) {
+  body {
+    height: auto;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  .card-left {
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+  }
+  .stat-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .card-right {
+    width: 100%;
+    background-image: url(./images/image-header-mobile.jpg);
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+  }
+  .attribution {
+    position: relative;
+    margin-top: 40px;
+  }
+}
