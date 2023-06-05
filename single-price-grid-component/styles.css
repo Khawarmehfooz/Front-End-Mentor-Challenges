@@ -1,0 +1,133 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+  box-sizing: border-box;
+  /* margin: 0 */
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+/* Body */
+body {
+  background-color: var(--light-gray);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+/* Main */
+main {
+  width: min(40rem, 95%);
+  background-color: white;
+  border-radius: 8px;
+}
+.top-section {
+  padding: 1.5rem;
+}
+.title {
+  font-size: 20px;
+  color: var(--cyan);
+}
+.sub-heading {
+  color: var(--bright-yellow);
+  font-size: 18px;
+}
+.normal-text {
+  color: var(--grayish-blue);
+}
+/* Colums */
+.flex {
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+/* left */
+.left {
+  background-color: var(--cyan);
+  width: 50%;
+  padding: 1.25rem 1.5rem;
+  border-bottom-left-radius: 8px;
+}
+.left h3 {
+  color: white;
+  font-weight: 500;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.price {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+.time-period {
+  color: var(--light-gray);
+  font-size: 14px;
+}
+.text-light {
+  color: var(--light-gray);
+}
+.btn {
+  background-color: var(--bright-yellow);
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 8px;
+}
+/* right */
+.right {
+  background-color: hsla(179, 62%, 43%, 0.7);
+  width: 50%;
+  border-bottom-right-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+.right h3 {
+  color: white;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  color: var(--light-gray);
+}
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    border-radius: 0;
+  }
+  .right {
+    border-radius: 0 0 8px 8px;
+  }
+  footer {
+    position: relative;
+  }
+}
